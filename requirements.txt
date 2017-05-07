@@ -1,3 +1,4 @@
 Sanic
 elasticsearch
 elasticsearch-dsl
+ipython
