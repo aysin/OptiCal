@@ -2,3 +2,4 @@ Sanic
 elasticsearch
 elasticsearch-dsl
 ipython
+Jinja2
