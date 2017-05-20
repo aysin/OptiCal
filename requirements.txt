@@ -3,3 +3,4 @@ elasticsearch
 elasticsearch-dsl
 ipython
 Jinja2
+gunicorn

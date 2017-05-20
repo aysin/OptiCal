@@ -7,7 +7,7 @@ from jinja2 import Environment, PackageLoader
 client = Elasticsearch(hosts=['elasticsearch'], http_auth=('elastic', 'changeme',))
 env = Environment(loader=PackageLoader('app', 'templates'))
 
-app = Sanic(__name__)
+app = application = Sanic(__name__)
 
 @app.route('/')
 async def test(request):

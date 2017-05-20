@@ -6,6 +6,7 @@ services:
     - "8080:8080"
     volumes:
     - .:/code
+    command: gunicorn --reload --chdir /code/optical --bind localhost:8000 --worker-class sanic.worker.GunicornWorker app
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:5.4.0
     ports:
